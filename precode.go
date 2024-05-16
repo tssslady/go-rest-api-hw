@@ -104,7 +104,6 @@ func deleteTaskByID(w http.ResponseWriter, r *http.Request) {
 	}
 
 	delete(tasks, id)
-
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(http.StatusOK)
 }
